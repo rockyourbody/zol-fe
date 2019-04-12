@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+</head>
+<body>
+    <!-- 顶部标题 -->
+    <div class="zs-topbar">
+        <div class="wrapper clearfix">
+            <div class="zs-login-info">
+                <span class="zs-home">
+                    <a href="javascript:;">商城首页</a>
+                </span>
+                <span class="zs-login">
+                    Hi~欢迎来到Z商城，请<a href="javascript:;">登录</a>
+                </span>
+                <span class="zs-register">
+                    <a href="javascript:;">免费注册</a>
+                </span>
+            </div>
+            <ul class="zs-quick-menu">
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="zs-cen" id="zs-cen" name="show-hidden">
+                    <a href="javascript:;" class="zs-center">
+                        买家中心
+                        <i class="ico"></i>
+                    </a>
+                    <div class="zs-center-bd" id="zs-cen-hidden">
+                        <a href="javascript:;">关注的店铺<em>30</em></a>
+                        <a href="javascript:;">关注的商品<em>48</em></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">购物车0件</a>
+                </li>
+                <li>
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+                <li class="zs-separator">|</li>
+                <li class="zs-mob" id="zs-mob" name="show-hidden">
+                    <a href="javascript:;" class="zs-mobile">
+                        <i class="red-mob"></i>
+                        手机商城
+                        <i class="ico"></i>
+                    </a>
+                    <div class="zs-mobile-bd" id="zs-mob-hidden">
+                        <img src="images/shop_wechat.png">
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">中关村在线</a>
+                </li>
+                <li>
+                    <a href="javascript:;">招商合作</a>
+                </li>
+                <li class="zs-ser" id="zs-ser" name="show-hidden">
+                    <a href="javascript:;" class="zs-service">联系客服
+                        <i class="ico"></i>
+                    </a>
+                    <div class="zs-service-bd" id="zs-ser-hidden">400-688-1999</div>
+                </li>       
+            </ul>
+        </div>
+    </div>
+    <!-- 搜索栏 -->
+    <div class="header">
+        <div class="wrapper clearfix">
+            <div class="logo">
+                <a href="javascript:;"></a>
+            </div>
+            <div class="city-location" id="city-location" name="show-hidden">
+                <span class="city-name">
+                    北京
+                    <em class="icon"></em>
+                </span>
+                <ul class="city-list" id="city-location-hidden">
+                    <li><a class = "def" href="javascript:;">北京</a></li>
+                    <li><a href="javascript:;">成都</a></li>
+                    <li><a href="javascript:;">青岛</a></li>
+                    <li><a href="javascript:;">西安</a></li>
+                    <li><a href="javascript:;">郑州</a></li>
+                    <li><a href="javascript:;">石家庄</a></li>
+                    <li><a href="javascript:;">平顶山</a></li>
+                    <li><a href="javascript:;">上海</a></li>
+                    <li><a href="javascript:;">德阳</a></li>
+                    <li><a href="javascript:;">邢台</a></li>
+                    <li><a href="javascript:;">承德</a></li>
+                    <li><a href="javascript:;">驻马店</a></li>
+                    <li><a href="javascript:;">安阳</a></li>
+                    <li><a href="javascript:;">新乡</a></li>
+                    <li><a href="javascript:;">宝鸡</a></li>
+                    <li><a href="javascript:;">全国</a></li>
+                </ul>
+            </div>
+            <div class="quick-entry">
+                <a href="javascript:;" class="cart">
+                    购物车
+                    <i class="ico"></i>
+                    <em class="number">0</em>
+                </a>
+                <a href="javascript:;" class="coupon">
+                    我的优惠券
+                    <i class="ico"></i>
+                </a>
+                <a href="javascript:;" class="order">
+                    我的订单
+                    <i class="ico"></i>
+                </a>
+            </div>
+            <div class="search-box">
+                <div class="search">
+                    <input type="text" name="keyword" class="search-text" placeholder="找找您想要的商品">
+                    <input type="submit" value="搜索" class="search-btn">
+                    <div class="search-hot-words">
+                        <a href="javascript:;" title="戴尔限时促销">戴尔限时促销</a>
+                        <a href="javascript:;" title="三星Note8">三星Note8</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav-box">
+        <div class="wrapper">
+            <ul class="nav clearfix">
+                <li><a class="current" href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">团购</a></li>
+                <li><a href="javascript:;">电子竞技</a></li>
+                <li><a href="javascript:;">本地优选</a></li>
+                <li><a href="javascript:;">家电优选</a></li>
+            </ul>
+            <div class="category-nav">
+                <div class="category-nav-header">全部分类<i class="ico"></i></div>
+                <div class="category-nav-body">
+                    <div class="category-items">
+                        <div class="items">
+                            <h1><a href="javascript:;">手机</a><i></i></h1>
+                            <i class="icon-01"></i>
+                        </div>
+                        <div class="items">
+                            <h1><a href="javascript:;">电脑</a><i></i></h1>
+                            <i class="icon-02"></i>
+                        </div>
+                        <div class="items">
+                            <h1><a href="javascript:;">DIY</a><i></i></h1>
+                            <i class="icon-03"></i>
+                        </div>
+                        <div class="items">
+                            <h1><a href="javascript:;">数码</a><i></i></h1>
+                            <i class="icon-04"></i>
+                        </div>
+                        <div class="items">
+                            <h1><a href="javascript:;">外设</a><i></i></h1>
+                            <i class="icon-05"></i>
+                        </div>
+                        <div class="items">
+                            <h1><a href="javascript:;">智能</a><i></i></h1>
+                            <i class="icon-06"></i>
+                        </div>
+                    </div>
+                    <div class="category-dropdown">
+                        <div class="category-all">
+                            <div class="items-list">
+                                <a href="javascript:;">手机</a>
+                                <a href="javascript:;">移动电源</a>
+                                <a href="javascript:;">蓝牙耳机</a>
+                                <a href="javascript:;">手机贴膜</a>
+                                <a href="javascript:;">保护套</a>
+                                <a href="javascript:;">数据线</a>
+                                <a href="javascript:;">充电器</a>
+                                <a href="javascript:;">手机维修</a>
+                            </div>
+                            <div class="banner">
+                                <a href="javascript:;">
+                                    <img src="images/banner-01.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-dropdown">
+                        <div class="category-all">
+                            <div class="items-list">
+                                <a href="javascript:;">笔记本电脑</a>
+                                <a href="javascript:;">游戏本</a>
+                                <a href="javascript:;">超极本</a>
+                                <a href="javascript:;">二合一平板电脑</a>
+                                <a href="javascript:;">平板电脑</a>
+                                <a href="javascript:;">品牌整机</a>
+                                <a href="javascript:;">一体机</a>
+                                <a href="javascript:;">笔记本配件</a>
+                                <a href="javascript:;">笔记本电池</a>
+                                <a href="javascript:;">笔记本包</a>
+                            </div>
+                            <div class="banner">
+                                <a href="javascript:;">
+                                    <img src="images/banner-02.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-dropdown">
+                        <div class="category-all">
+                            <div class="items-list">
+                                <a href="javascript:;">DIY主机</a>
+                                <a href="javascript:;">团购钜惠</a>
+                                <a href="javascript:;">硬盘</a>
+                                <a href="javascript:;">电源</a>
+                                <a href="javascript:;">散热器</a>
+                                <a href="javascript:;">CPU</a>
+                                <a href="javascript:;">机箱</a>
+                                <a href="javascript:;">主板</a>
+                                <a href="javascript:;">内存</a>
+                                <a href="javascript:;">固态硬盘</a>
+                                <a href="javascript:;">显卡</a>
+                            </div>
+                            <div class="banner">
+                                <a href="javascript:;">
+                                    <img src="images/banner-03.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-dropdown">
+                        <div class="category-all">
+                            <div class="items-list">
+                                <a href="javascript:;">数码相机</a>
+                                <a href="javascript:;">摄像机</a>
+                                <a href="javascript:;">相机镜头</a>
+                                <a href="javascript:;">相机电池</a>
+                                <a href="javascript:;">闪光灯</a>
+                                <a href="javascript:;">滤镜</a>
+                                <a href="javascript:;">电子教育</a>
+                                <a href="javascript:;">拍立得</a>
+                                <a href="javascript:;">相机包</a>
+                                <a href="javascript:;">相机遥控器</a>
+                                <a href="javascript:;">闪存卡</a>
+                            </div>
+                            <div class="banner">
+                                <a href="javascript:;">
+                                    <img src="images/banner-04.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-dropdown">
+                        <div class="category-all">
+                            <div class="items-list">
+                                <a href="javascript:;">键盘</a>
+                                <a href="javascript:;">鼠标</a>
+                                <a href="javascript:;">键鼠套装</a>
+                                <a href="javascript:;">鼠标垫</a>
+                                <a href="javascript:;">耳机</a>
+                                <a href="javascript:;">音箱</a>
+                                <a href="javascript:;">投影仪</a>
+                                <a href="javascript:;">录音笔</a>
+                                <a href="javascript:;">路由器</a>
+                                <a href="javascript:;">移动硬盘</a>
+                                <a href="javascript:;">U盘</a>
+                                <a href="javascript:;">摄像头</a>
+                                <a href="javascript:;">手柄</a>
+                            </div>
+                            <div class="banner">
+                                <a href="javascript:;">
+                                    <img src="images/banner-05.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-dropdown">
+                        <div class="category-all">
+                            <div class="items-list">
+                                <a href="javascript:;">智能手环</a>
+                                <a href="javascript:;">智能手表</a>
+                                <a href="javascript:;">VR眼镜</a>
+                                <a href="javascript:;">健康监测</a>
+                                <a href="javascript:;">智能机器人</a>
+                                <a href="javascript:;">智能电子秤</a>
+                                <a href="javascript:;">智能灯</a>
+                                <a href="javascript:;">智能投影</a>
+                                <a href="javascript:;">HTC VIVE</a>
+                            </div>
+                            <div class="banner">
+                                <a href="javascript:;">
+                                    <img src="images/banner-06.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div id="focus-banner">
+        <div class="focus-box">
+            <ul id="focus-list" class="focus-list">
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/focus-list-01.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/focus-list-02.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/focus-list-03.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 楼区 --> 
+    <div class="wrapper">
+        <!-- 团购 -->
+        <div class="section-01 stair" id="section-01">
+            <div class="group clearfix">
+                <div class="group-left">
+                    <img src="images/group.png" class="left-pic">
+                    <a href="javascript:;" class="left-more">更多团购</a>
+                </div>
+                <ul class="group-right">
+                    <li class="right-items">
+                        <a href="javascript:;" class="items-pic">
+                            <img src="images/group-right-01.jpg" alt="">
+                            <span class="icon">仅限到店</span>
+                        </a>
+                        <div class="right-word">
+                            <div class="word-name">
+                                <a href="javascript:;">华为畅享8 Plus 64GB</a>
+                            </div>
+                            <div class="right-price">
+                                <span class="price-rmb">¥</span>--
+                            </div>
+                            <div class="right-benefit">
+                                <span class="benefit">指定地区三小时送达</span>
+                            </div>
+                            <div class="arrive-com">
+                                <span class="arrive">到店团</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-items">
+                        <a href="javascript:;" class="items-pic">
+                            <img src="images/group-right-02.jpg" alt="">
+                            <span class="icon">仅限到店</span>
+                        </a>
+                        <div class="right-word">
+                            <div class="word-name">
+                                <a href="javascript:;">荣耀 10 128GB</a>
+                            </div>
+                            <div class="right-price">
+                                <span class="price-rmb">¥</span>--
+                            </div>
+                            <div class="right-benefit">
+                                <span class="benefit">到店贴膜</span>
+                            </div>
+                            <div class="arrive-com">
+                                <span class="arrive">到店团</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-items">
+                        <a href="javascript:;" class="items-pic">
+                            <img src="images/group-right-03.jpg" alt="">
+                            <span class="icon">仅限到店</span>
+                        </a>
+                        <div class="right-word">
+                            <div class="word-name">
+                                <a href="javascript:;">小米 红米5 Plus 64GB</a>
+                            </div>
+                            <div class="right-price">
+                                <span class="price-rmb">¥</span>--
+                            </div>
+                            <div class="right-benefit">
+                                <span class="benefit">到店购机赠爱科币</span>
+                            </div>
+                            <div class="arrive-com">
+                                <span class="arrive">到店团</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="group-middle">
+                    <li class="middle-items">
+                        <div class="mid-pic">
+                            <a href="javascript:;" class="pic">
+                                <img src="images/group-mid-01.jpg" alt="">
+                            </a>
+                            <div class="function-upward">
+                                <span class="opacity-mask"></span>
+                                <div class="function-content">
+                                    <p class="refer-price">
+                                        电商参考价：
+                                        <b>¥2799.00</b>
+                                    </p>
+                                    <p class="goods-detail">
+                                        <a href="javascript:;">评测</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">视频</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">点评</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-detail">
+                            <p class="name">
+                                <a href="javascript:;">荣耀 V10  64GB</a>
+                            </p>
+                            <p class="price">
+                                <span class="price-rmb">¥</span>2219
+                            </p>
+                            <div class="time">
+                                <em>
+                                    剩余：
+                                    <span>3</span>天
+                                    <span>2</span>小时
+                                    <span>43</span>分
+                                    <span>23</span>秒
+                                </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="middle-items">
+                        <div class="mid-pic">
+                            <a href="javascript:;" class="pic">
+                                <img src="images/group-mid-02.jpg" alt="">
+                            </a>
+                            <div class="function-upward">
+                                <span class="opacity-mask"></span>
+                                <div class="function-content">
+                                    <p class="refer-price">
+                                        电商参考价：
+                                        <b>¥暂无</b>
+                                    </p>
+                                    <p class="goods-detail">
+                                        <a href="javascript:;">评测</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">视频</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">点评</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-detail">
+                            <p class="name">
+                                <a href="javascript:;">录音师（LUYS） 7.1声道头戴式电竞游戏耳机</a>
+                            </p>
+                            <p class="price">
+                                <span class="price-rmb">¥</span>--
+                            </p>
+                            <div class="time">
+                                <em>
+                                    剩余：
+                                    <span></span>天
+                                    <span></span>小时
+                                    <span></span>分
+                                    <span></span>秒
+                                </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="middle-items">
+                        <div class="mid-pic">
+                            <a href="javascript:;" class="pic">
+                                <img src="images/group-mid-03.jpg" alt="">
+                            </a>
+                            <div class="function-upward">
+                                <span class="opacity-mask"></span>
+                                <div class="function-content">
+                                    <p class="refer-price">
+                                        电商参考价：
+                                        <b>¥暂无</b>
+                                    </p>
+                                    <p class="goods-detail">
+                                        <a href="javascript:;">评测</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">视频</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">点评</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-detail">
+                            <p class="name">
+                                <a href="javascript:;">甲骨龙 酷睿 I5 8400 1050TI 4G独显 16G内存</a>
+                            </p>
+                            <p class="price">
+                                <span class="price-rmb">¥</span>--
+                            </p>
+                            <div class="time">
+                                <em>
+                                    剩余：
+                                    <span></span>天
+                                    <span></span>小时
+                                    <span></span>分
+                                    <span></span>秒
+                                </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="middle-items">
+                        <div class="mid-pic">
+                            <a href="javascript:;" class="pic">
+                                <img src="images/group-mid-04.jpg" alt="">
+                            </a>
+                            <div class="function-upward">
+                                <span class="opacity-mask"></span>
+                                <div class="function-content">
+                                    <p class="refer-price">
+                                        电商参考价：
+                                        <b>¥2399.00</b>
+                                    </p>
+                                    <p class="goods-detail">
+                                        <a href="javascript:;">评测</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">视频</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">点评</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-detail">
+                            <p class="name">
+                                <a href="javascript:;">荣耀Play 64GB</a>
+                            </p>
+                            <p class="price">
+                                <span class="price-rmb">¥</span>1849
+                            </p>
+                            <div class="time">
+                                <em>
+                                    剩余：
+                                    <span>6</span>天
+                                    <span>16</span>小时
+                                    <span>26</span>分
+                                    <span>36</span>秒
+                                </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="middle-items">
+                        <div class="mid-pic">
+                            <a href="javascript:;" class="pic">
+                                <img src="images/group-mid-05.jpg" alt="">
+                            </a>
+                            <div class="function-upward">
+                                <span class="opacity-mask"></span>
+                                <div class="function-content">
+                                    <p class="refer-price">
+                                        电商参考价：
+                                        <b>¥5299.00</b>
+                                    </p>
+                                    <p class="goods-detail">
+                                        <a href="javascript:;">评测</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">视频</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">点评</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-detail">
+                            <p class="name">
+                                <a href="javascript:;">惠普14英寸窄边框轻薄影音娱乐本</a>
+                            </p>
+                            <p class="price">
+                                <span class="price-rmb">¥</span>--
+                            </p>
+                            <div class="time">
+                                剩余：
+                                <em>
+                                    <span class="red-color"></span>天
+                                    <span class="red-color"></span>小时
+                                    <span class="red-color"></span>分
+                                    <span class="red-color"></span>秒
+                                </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="middle-items">
+                        <div class="mid-pic">
+                            <a href="javascript:;" class="pic">
+                                <img src="images/group-mid-06.jpg" alt="">
+                            </a>
+                            <div class="function-upward">
+                                <span class="opacity-mask"></span>
+                                <div class="function-content">
+                                    <p class="refer-price">
+                                        电商参考价：
+                                        <b>¥暂无</b>
+                                    </p>
+                                    <p class="goods-detail">
+                                        <a href="javascript:;">评测</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">视频</a>
+                                        <span class="line">|</span>
+                                        <a href="javascript:;">点评</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-detail">
+                            <p class="name">
+                                <a href="javascript:;">华硕15.6英寸性能级游戏战舰</a>
+                            </p>
+                            <p class="price">
+                                <span class="price-rmb">¥</span>--
+                            </p>
+                            <div class="time">
+                                剩余：
+                                <em>
+                                    <span></span>天
+                                    <span></span>小时
+                                    <span></span>分
+                                    <span></span>秒
+                                </em>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 领劵中心 -->
+        <div class="section-02 stair clearfix">
+            <ul class="coupon">
+                <li class="all">
+                    <h1>领劵中心</h1>
+                    <p>COUPON</p>
+                    <div>
+                        <a href="javascript:;" class="look">
+                            去看看
+                            <span>>></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <i class="ico"></i>
+                    <div class="coupon-content clearfix">
+                        <div class="price">¥10</div>
+                        <div class="name">
+                            <h2>汇通数码风暴专营店</h2>
+                            <p>满4499可用</p>
+                        </div>
+                    </div>
+                    <div class="get">
+                        <a href="javascript:;">
+                            立即领取
+                            <span>>></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <i class="ico"></i>
+                    <div class="coupon-content">
+                        <div class="price">¥5</div>
+                        <div class="name">
+                            <h2>汇通数码风暴专营店</h2>
+                            <p>满2399可用</p>
+                        </div>
+                    </div>
+                    <div class="get">
+                        <a href="javascript:;">
+                            立即领取
+                            <span>>></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <i class="ico"></i>
+                    <div class="coupon-content">
+                        <div class="price">¥3</div>
+                        <div class="name">
+                            <h2>圣彬通讯专营店</h2>
+                            <p>满999可用</p>
+                        </div>
+                    </div>
+                    <div class="get">
+                        <a href="javascript:;">
+                            立即领取
+                            <span>>></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <i class="ico"></i>
+                    <div class="coupon-content">
+                        <div class="price">¥10</div>
+                        <div class="name">
+                            <h2>环宇荣合专营店</h2>
+                            <p>满3999可用</p>
+                        </div>
+                    </div>
+                    <div class="get">
+                        <a href="javascript:;">
+                            立即领取
+                            <span>>></span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 同城购 -->
+        <div class="section-03 stair">
+            <div class="section section-header clearfix">
+                <h3>同城购</h3>
+                <span class="header-tip">同城、身边、退换无忧</span>
+                <a href="javascript:;" class="more-link">更多</a>
+            </div>
+            <div class="citywide">
+                <ul class="citywide-banner clearfix">
+                    <li class="items">
+                        <a href="javascript:;">
+                            <img src="images/citywide-01.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;">
+                            <img src="images/citywide-02.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;">
+                            <img src="images/citywide-03.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="citywide-list clearfix">
+                    <li class="items">
+                        <a href="javascript:;" class="pic">
+                            <img src="images/city-wide-01.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="goods-name">Apple iPhone 8 (A1863)  移动联通电信4G手机</a>
+                        <p class="goods-msg">首发当天部分机型现货</p>
+                        <div class="goods-price">
+                            <p class="price">¥4999.00</p>
+                            <p class="refer-price">
+                                <span>电商参考价:</span>¥4599.00
+                            </p>
+                        </div>
+                        <div class="goods-detail clearfix">
+                            <a href="javascript:;" class="function-icon">
+                                商品评价
+                                <div class="icon-mask">
+                                    <p class="mask">商品评价</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                商品视频
+                                <div class="icon-mask">
+                                    <p class="mask">商品视频</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                网友点评
+                                <div class="icon-mask">
+                                    <p class="mask">网友点评</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;" class="pic">
+                            <img src="images/city-wide-02.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="goods-name">小米 5X（全网通）4GB+64GB  移动联通电信4G手机 双卡双待</a>
+                        <p class="goods-msg">【全国包邮】</p>
+                        <div class="goods-price">
+                            <p class="price">¥1299.00</p>
+                            <p class="refer-price">
+                                <span>电商参考价:</span>¥1299.00
+                            </p>
+                        </div>
+                        <div class="goods-detail clearfix">
+                            <a href="javascript:;" class="function-icon">
+                                商品评价
+                                <div class="icon-mask">
+                                    <p class="mask">商品评价</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                商品视频
+                                <div class="icon-mask">
+                                    <p class="mask">商品视频</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                网友点评
+                                <div class="icon-mask">
+                                    <p class="mask">网友点评</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;" class="pic">
+                            <img src="images/city-wide-03.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="goods-name">OPPO R11s 全面屏双摄拍照手机（4G+64G全网通）双卡双待手机</a>
+                        <p class="goods-msg">包邮</p>
+                        <div class="goods-price">
+                            <p class="price">¥2599.00</p>
+                            <p class="refer-price">
+                                <span>电商参考价:</span>¥2599.00
+                            </p>
+                        </div>
+                        <div class="goods-detail clearfix">
+                            <a href="javascript:;" class="function-icon">
+                                商品评价
+                                <div class="icon-mask">
+                                    <p class="mask">商品评价</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                商品视频
+                                <div class="icon-mask">
+                                    <p class="mask">商品视频</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                网友点评
+                                <div class="icon-mask">
+                                    <p class="mask">网友点评</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;" class="pic">
+                            <img src="images/city-wide-04.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="goods-name">华为 Mate 10（6G+128GB RAM/全网通）4G手机 双卡双待</a>
+                        <p class="goods-msg">华为 HUAWEI Mate 10 6GB+128GB  移动联通电信4G手机 双卡双待</p>
+                        <div class="goods-price">
+                            <p class="price">¥4199.00</p>
+                            <p class="refer-price">
+                                <span>电商参考价:</span>¥3499.00
+                            </p>
+                        </div>
+                        <div class="goods-detail clearfix">
+                            <a href="javascript:;" class="function-icon">
+                                商品评价
+                                <div class="icon-mask">
+                                    <p class="mask">商品评价</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                商品视频
+                                <div class="icon-mask">
+                                    <p class="mask">商品视频</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                网友点评
+                                <div class="icon-mask">
+                                    <p class="mask">网友点评</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;" class="pic">
+                            <img src="images/city-wide-05.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="goods-name">诺基亚 7 Nokia 7 4GB+64GB黑色 全网通 双卡双待 4G手机</a>
+                        <p class="goods-msg">诺基亚 7 (Nokia 7) 4GB+64GB 黑色 全网通 双卡双待 移动联通电信4G手机</p>
+                        <div class="goods-price">
+                            <p class="price">¥1599.00</p>
+                            <p class="refer-price">
+                                <span>电商参考价:</span>暂无
+                            </p>
+                        </div>
+                        <div class="goods-detail clearfix">
+                            <a href="javascript:;" class="function-icon">
+                                商品评价
+                                <div class="icon-mask">
+                                    <p class="mask">商品评价</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                商品视频
+                                <div class="icon-mask">
+                                    <p class="mask">商品视频</p>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="function-icon">
+                                网友点评
+                                <div class="icon-mask">
+                                    <p class="mask">网友点评</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Z智选 -->
+        <div class="section-04 stair">
+            <div class="section section-header clearfix">
+                <h3>Z智选</h3>
+            </div>
+            <div class="noopsyche clearfix">
+                <div class="clearfix">
+                    <div class="noopsyche-focus">
+                        <ul class="noopsyche-tab">
+                            <li class="active">影音</li>
+                            <li>穿戴</li>
+                            <li>家居</li>
+                            <li>出行</li>
+                            <li>美护</li>
+                        </ul>
+                        <ul class="tab-pics">
+                            <li>
+                                <a href="javascript:;"><img src="images/noopsyche-tab-01.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><img src="images/noopsyche-tab-02.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><img src="images/noopsyche-tab-03.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><img src="images/noopsyche-tab-04.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><img src="images/noopsyche-tab-05.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="noopsyche-pics">
+                        <a href="javascript:;"><img src="images/noopsyche-normal-01.jpg" alt=""></a>
+                        <a href="javascript:;"><img src="images/noopsyche-normal-02.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <ul class="noopsyche-list">
+                        <li>
+                            <img src="images/noopsyche-list-01.jpg" alt="">
+                            <div class="noopsyche-mark">
+                                <div class="mark-name">漫步者R102V音箱</div>
+                                <div class="mark-price">¥159</div>
+                                <div class="mark-else">
+                                    <a href="javascript:;">查看详情</a>
+                                </div>
+                                <div class="mark-detail">
+                                    <a href="javascript:;">评测</a>
+                                    <a href="javascript:;">视频</a>
+                                    <a href="javascript:;">点评</a>
+                                </div>
+                                <div class="mark-refer">电商参考价：¥暂无</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/noopsyche-list-02.jpg" alt="">
+                            <div class="noopsyche-mark">
+                                <div class="mark-name">浩酷M1带麦耳机</div>
+                                <div class="mark-price">¥31</div>
+                                <div class="mark-else">
+                                    <a href="javascript:;">查看详情</a>
+                                </div>
+                                <div class="mark-detail">
+                                    <a href="javascript:;">评测</a>
+                                    <a href="javascript:;">视频</a>
+                                    <a href="javascript:;">点评</a>
+                                </div>
+                                <div class="mark-refer">电商参考价：¥暂无</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/noopsyche-list-03.jpg" alt="">
+                            <div class="noopsyche-mark">
+                                <div class="mark-name">小米10000毫安移动电源</div>
+                                <div class="mark-price">¥99</div>
+                                <div class="mark-else">
+                                    <a href="javascript:;">查看详情</a>
+                                </div>
+                                <div class="mark-detail">
+                                    <a href="javascript:;">评测</a>
+                                    <a href="javascript:;">视频</a>
+                                    <a href="javascript:;">点评</a>
+                                </div>
+                                <div class="mark-refer">电商参考价：¥75.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/noopsyche-list-04.jpg" alt="">
+                            <div class="noopsyche-mark">
+                                <div class="mark-name">三星S8原装耳机</div>
+                                <div class="mark-price">¥109</div>
+                                <div class="mark-else">
+                                    <a href="javascript:;">查看详情</a>
+                                </div>
+                                <div class="mark-detail">
+                                    <a href="javascript:;">评测</a>
+                                    <a href="javascript:;">视频</a>
+                                    <a href="javascript:;">点评</a>
+                                </div>
+                                <div class="mark-refer">电商参考价：¥暂无</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="list-pics">
+                        <a href="javascript:;"><img src="images/noopsyche-normal-03.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="choose-banner">
+                    <a href="javascript:;"><img src="images/noopsyche-normal-04.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="images/noopsyche-normal-05.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- 品牌精选 -->
+        <div class="section-05 stair">
+            <div class="section section-header clearfix">
+                <h3>品牌精选</h3>
+                <span class="header-tip">大牌、保障、服务赞</span>
+            </div>
+            <div class="brand-content clearfix">
+                <div class="items-first">
+                    <img src="images/brand-01.jpg" alt="">
+                </div>
+                <ul class="brand-list clearfix">
+                    <li class="items">
+                        <a href="javascript:;" class="pics"><img src="images/brand-02.jpg" alt=""></a>
+                        <p class="brand-name"><a href="javascript:;">王俊凯 戴尔DELL游匣G3</a></p>
+                        <p class="brand-price">RMB<span class="price-num">7,499</span></p>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;" class="pics"><img src="images/brand-03.jpg" alt=""></a>
+                        <p class="brand-name"><a href="javascript:;">王俊凯戴尔DELL游匣G7</a></p>
+                        <p class="brand-price">RMB<span class="price-num">9,999</span></p>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;" class="pics"><img src="images/brand-04.jpg" alt=""></a>
+                        <p class="brand-name"><a href="javascript:;">王俊凯戴尔 游匣G3</a></p>
+                        <p class="brand-price">RMB<span class="price-num">9,999</span></p>
+                    </li>
+                    <li class="items">
+                        <a href="javascript:;" class="pics"><img src="images/brand-05.jpg" alt=""></a>
+                        <p class="brand-name"><a href="javascript:;">王俊凯 戴尔游匣 G7</a></p>
+                        <p class="brand-price">RMB<span class="price-num">11,999</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 电子竞技 -->
+        <div class="section-06 stair">
+            <div class="section section-header clearfix">
+                <h3>电子竞技</h3>
+                <a href="javascript:;" class="more-link">更多</a>
+            </div>
+            <div class="game clearfix">
+                <div id="gameTabs" class="game-hot">
+                    <div class="hot-head">
+                        <p class="head-title">热门</p>
+                        <ul class="head-list">
+                            <li class="list-btn current"><a href="#tabs-1">电竞主机</a></li>
+                            <li class="list-btn"><a href="#tabs-2">电竞外设</a></li>
+                            <li class="list-btn"><a href="#tabs-3">游戏本</a></li>
+                        </ul>
+                    </div>
+                    <div class="hot-content">
+                        <ul class="content-list">
+                            <li id="tabs-1" class="content-tab">
+                                <div class="tab-top">
+                                    <img src="images/gameleft-1-01.jpg" alt="">
+                                </div>
+                                <ul class="tab-bottom clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-1-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">甲骨龙 G3900四核心/120G SSD家用办公DIY组电脑</a></p>
+                                        <p class="items-price">¥1159.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-1-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">I5 400/GTX1050Ti G/游戏主机</a></p>
+                                        <p class="items-price">¥3389.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-1-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">甲骨龙6G独显DIY游戏电脑</a></p>
+                                        <p class="items-price">¥5099.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="tabs-2" class="content-tab">
+                                <div class="tab-top">
+                                    <img src="images/gameleft-2-01.jpg" alt="">
+                                </div>
+                                <ul class="tab-bottom clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-2-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">鑫谷散热风扇</a></p>
+                                        <p class="items-price">¥69.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-2-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">大号鼠标垫限时抢</a></p>
+                                        <p class="items-price">¥29.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-2-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">AOC 23.8英寸IPS窄边HDMI高清显示器</a></p>
+                                        <p class="items-price">¥759.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="tabs-3" class="content-tab">
+                                <div class="tab-top">
+                                    <img src="images/gameleft-3-01.jpg" alt="">
+                                </div>
+                                <ul class="tab-bottom clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-3-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">联想小新潮7000 窄边框笔记本I5 8G 双硬盘</a></p>
+                                        <p class="items-price">¥5499.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-3-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">戴尔 游匣 15P-2648B大屏游戏本 四核 4G独显</a></p>
+                                        <p class="items-price">¥4829.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/gameleft-3-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">联想 小新 潮5000超极本 酷睿i7+2G独显 IPS屏幕</a></p>
+                                        <p class="items-price">¥4388.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="game-diy">
+                    <div class="diy-top">
+                        <p class="top-title">电竞</p>
+                    </div>
+                    <div class="diy-bottom">
+                        <ul class="diy-list">
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/gameright-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">海盗船游戏鼠标</a></p>
+                                <p class="items-price">¥199.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/gameright-02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">Apple iMac限时直降</a></p>
+                                <p class="items-price">¥10299.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/gameright-03.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">i7 7700K中文盒装CPU</a></p>
+                                <p class="items-price">¥2599.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/gameright-04.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">七彩虹 战斧主板</a></p>
+                                <p class="items-price">¥399.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/gameright-05.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">4G独显 DIY台式组装游戏主机</a></p>
+                                <p class="items-price">¥3999.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/gameright-06.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">漫步者轻便头戴耳机</a></p>
+                                <p class="items-price">¥149.00</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 家电优选 -->
+        <div class="section-07 stair">
+            <div class="section section-header clearfix">
+                <h3>家电优选</h3>
+            </div>
+            <div class="electrical clearfix">
+                <div class="elec-left">
+                    <div class="elec-left-top">
+                        <a href="javascript:;">
+                            <img src="images/elec-left-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="elec-left-bottom">
+                        <ul class="elec-list clearfix">
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-02.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-03.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-04.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-05.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="elec-list clearfix">
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-06.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-07.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-08.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="com-items">
+                                <span class="cutoff-line"></span>
+                                <a href="javascript:;">
+                                    <img src="images/elec-left-09.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="elecTabs" class="elec-right">
+                    <div class="elec-right-top">
+                        <ul class="top-tab">
+                            <li class="tab-btn current"><a href="#electabs-1">彩电</a></li>
+                            <li class="tab-btn"><a href="#electabs-2">冰箱</a></li>
+                            <li class="tab-btn"><a href="#electabs-3">洗衣机</a></li>
+                            <li class="tab-btn"><a href="#electabs-4">厨卫</a></li>
+                            <li class="tab-btn"><a href="#electabs-5">小家电</a></li>
+                        </ul>
+                    </div>
+                    <div class="elec-right-bottom">
+                        <ul class="bottom-tab">
+                            <li id="electabs-1" class="bottom-tab-list">
+                                <ul class="clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-1-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</a></p>
+                                        <p class="items-price">¥999.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-1-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">创维  50M9 50英寸 人工智能HDR 4K超高清 互联网液晶电视机</a></p>
+                                        <p class="items-price">¥2499.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-1-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">创维  55V8E 55英寸 人工智能4色HDR 4K超高清智能网络液晶电视机</a></p>
+                                        <p class="items-price">¥3299.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-1-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">TCL电视 D32A810 32英寸高清 八核观影王 网络智能LED液晶电视</a></p>
+                                        <p class="items-price">¥1399.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-1-05.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">TCL电视 D43A810 43英寸全高清 八核观影王 网络智能LED液晶电视</a></p>
+                                        <p class="items-price">¥1899.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-1-06.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">TCL电视 49A810 49英寸全高清 八核观影 金属边框 智能LED液晶电视</a></p>
+                                        <p class="items-price">¥2399.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="electabs-2" class="bottom-tab-list">
+                                <ul class="clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-2-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的冰箱（Midea） BCD-535WKZM(E) 535L 对开门 风冷无霜 智能 冰箱</a></p>
+                                        <p class="items-price">¥3199.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-2-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的冰箱（Midea） BCD-520WKM(E) 520升 对开门 风冷无霜 电脑温控</a></p>
+                                        <p class="items-price">¥2999.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-2-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的冰箱（Midea）BCD-318WTPZM(E) 318升 多门式 变频智能家用电冰箱</a></p>
+                                        <p class="items-price">¥3099.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-2-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的冰箱（Midea）BCD-468WTPM(E) 468升十字对开门家用节能变频风冷</a></p>
+                                        <p class="items-price">¥3999.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-2-05.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的冷柜（Midea） BD/BC-96KM(E) 96L 顶开门 冷冻冷藏 节能家用</a></p>
+                                        <p class="items-price">¥799.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-2-06.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的冷柜（Midea）BD/BC-203KM(E) 203升 单温 小型 冷柜</a></p>
+                                        <p class="items-price">¥1129.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="electabs-3" class="bottom-tab-list">
+                                <ul class="clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-3-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的洗衣机（Midea）MD80-11WDX 8公斤 变频滚筒洗烘一体智能操控节能</a></p>
+                                        <p class="items-price">¥3399.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-3-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的洗衣机(Midea)MB80-1020H 8公斤 定频 波轮 家用大容量 洗衣机</a></p>
+                                        <p class="items-price">¥1199.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-3-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">小天鹅洗衣机（Littleswan）TD80V80WDG 8公斤洗烘一体变频滚筒全自动</a></p>
+                                        <p class="items-price">¥3499.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-3-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">小天鹅（LittleSwan） TD80-Mute60WDX智能洗烘一体滚筒洗衣机</a></p>
+                                        <p class="items-price">¥3499.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-3-05.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">小天鹅洗衣机（Littleswan）TG80V80WDG 8公斤 变频 滚筒 智能 全自动</a></p>
+                                        <p class="items-price">¥2799.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-3-06.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">小天鹅（LittleSwan） TB80V80WDCLG8公斤水魔方智能变频波轮洗衣机</a></p>
+                                        <p class="items-price">¥2299.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="electabs-4" class="bottom-tab-list">
+                                <ul class="clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-4-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">方太 CXW-200-EH40QE</a></p>
+                                        <p class="items-price">¥2490.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-4-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">方太 JQ22TS</a></p>
+                                        <p class="items-price">¥5390.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-4-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">方太 CXW-189-JX78</a></p>
+                                        <p class="items-price">¥2990.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-4-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">方太 HC26BE</a></p>
+                                        <p class="items-price">¥1999.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-4-05.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">方太 FD23BE</a></p>
+                                        <p class="items-price">¥1490.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-4-06.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">方太 ZTD100J-J45E  家用100L嵌入式 消毒柜/消毒碗柜</a></p>
+                                        <p class="items-price">¥1999.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="electabs-5" class="bottom-tab-list">
+                                <ul class="clearfix">
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-5-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的电压力锅WQC50A1P 一锅双胆 智能预约 5L高压锅</a></p>
+                                        <p class="items-price">¥249.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-5-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的电磁炉 WT2121S  哑光防滑触控面板 八档火力  黑色</a></p>
+                                        <p class="items-price">¥239.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-5-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的 电饭煲 4L 多功能家用智能电饭锅 MB-WFS4017TM 巧克力色</a></p>
+                                        <p class="items-price">¥299.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-5-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的电饭煲 拉丝不锈钢机身 立体加热 聚能釜内胆4LMB-WFS4029</a></p>
+                                        <p class="items-price">¥279.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-5-05.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的  KJ500G-E31 家用除甲醛除雾霾除PM2.5空净 空气净化器</a></p>
+                                        <p class="items-price">¥3998.00</p>
+                                    </li>
+                                    <li class="common-items">
+                                        <div class="items-pic">
+                                            <a href="javascript:;">
+                                                <img src="images/elec-right-5-06.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <p class="items-name"><a href="javascript:;">美的家用电水壶</a></p>
+                                        <p class="items-price">¥169.00</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 数码潮品 -->
+        <div class="section-08 stair">
+            <div class="section section-header clearfix">
+                <h3>数码潮品</h3>
+                <span class="header-tip">潮流、前端、黑科技</span>
+            </div>
+            <div class="digital clearfix">
+                <div class="camera">
+                    <div class="camera-top">
+                        <p class="camera-top-title">摄影/摄像</p>
+                        <a href="javascript:;" class="more">
+                            <span class="word">更多</span>
+                            <span class="icon">></span>
+                        </a>
+                    </div>
+                    <div class="camera-bottom">
+                        <ul class="camera-tab clearfix">
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</a></p>
+                                <p class="items-price">¥999.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</a></p>
+                                <p class="items-price">¥999.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-03.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</a></p>
+                                <p class="items-price">¥999.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-04.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</a></p>
+                                <p class="items-price">¥999.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-05.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</a></p>
+                                <p class="items-price">¥999.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-06.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</a></p>
+                                <p class="items-price">¥999.00</p>
+                            </li>
+                        </ul>
+                        <div class="camera-brand clearfix">
+                            <ul class="camera-brand-tab">
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-07.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-08.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-09.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-left-10.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="camera">
+                    <div class="camera-top camera-top-color">
+                        <p class="camera-top-title">笔记本/平板</p>
+                        <a href="javascript:;" class="more">
+                            <span class="word">更多</span>
+                            <span class="icon">></span>
+                        </a>
+                    </div>
+                    <div class="camera-bottom">
+                        <ul class="camera-tab clearfix">
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">神舟 战神 Z7-KP7D2</a></p>
+                                <p class="items-price">¥6699.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">ThinkPad S2-11CD商务笔记本电脑8G 256G</a></p>
+                                <p class="items-price">¥5999.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-03.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">惠普 暗影精灵2 Pro游戏本</a></p>
+                                <p class="items-price">¥4688.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-04.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">联想小新700电竞版</a></p>
+                                <p class="items-price">¥4699.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-05.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">神舟 战神Z6-KP5D1 GTX1050游戏本</a></p>
+                                <p class="items-price">¥4692.00</p>
+                            </li>
+                            <li class="common-items">
+                                <div class="items-pic">
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-06.jpg" alt="">
+                                    </a>
+                                </div>
+                                <p class="items-name"><a href="javascript:;">华硕飞行堡垒二代尊享版特惠！</a></p>
+                                <p class="items-price">¥5050.00</p>
+                            </li>
+                        </ul>
+                        <div class="camera-brand clearfix">
+                            <ul class="camera-brand-tab">
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-07.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-08.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-09.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="com-items">
+                                    <span class="cutoff-line"></span>
+                                    <a href="javascript:;">
+                                        <img src="images/camera-right-10.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 本周热销 -->
+        <div class="section-09 stair">
+            <div class="week">
+                <span class="hot-sell">本周热销</span>
+            </div>
+            <ul class="sell-tab clearfix">
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">【包邮送壳膜支架】华为 HUAWEI Mate 10 4+64GB 全网通 mate10</a>
+                    </p>
+                    <p class="sell-price">¥2468.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-02.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">【现货包邮 送壳膜】荣耀 畅玩7X（4GB 全网通）移动联通电信4G</a>
+                    </p>
+                    <p class="sell-price">¥935.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-03.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">GoPro Hero 6 Black</a>
+                    </p>
+                    <p class="sell-price">¥3880.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-04.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">Sony 索尼 HDR-PJ820E内置投影、64G储存</a>
+                    </p>
+                    <p class="sell-price">¥6899.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-05.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">【顺丰包邮】苹果/Apple iPad 平板电脑 9.7英寸 32GB/WLAN</a>
+                    </p>
+                    <p class="sell-price">¥2139.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-06.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">索尼（SONY）HDR-PJ410 摄像机 索尼 HDR-PJ410   索尼PJ410摄像机</a>
+                    </p>
+                    <p class="sell-price">¥2288.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-07.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">【顺丰包邮】Apple iPad平板电脑 2018年新款9.7英寸128G-Cellular版</a>
+                    </p>
+                    <p class="sell-price">¥2999.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-08.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">惠普 PAVILION 15-CK028TX（2UY75PA）15.6英寸 轻薄 / 影音笔记本</a>
+                    </p>
+                    <p class="sell-price">¥5741.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-09.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">惠普 PAVILION 15-CK028TX（2UY75PA）15.6英寸 轻薄 / 影音笔记本</a>
+                    </p>
+                    <p class="sell-price">¥5741.00</p>
+                </li>
+                <li class="sell-list">
+                    <div class="sell-pic">
+                        <a href="javascript:;">
+                            <img src="images/week-10.jpg" alt="">
+                        </a>
+                    </div>
+                    <p class="sell-name">
+                        <a href="javascript:;">苹果 10.5英寸iPad Pro 平板电脑（64G WLAN版/A10X芯片/Retina屏）</a>
+                    </p>
+                    <p class="sell-price">¥4399.00</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="footer-wrapper">
+            <ul class="footer-tab clearfix">
+                <li>
+                    <a href="javascript:;">
+                        <p class="top">先行赔付</p>
+                        <p class="below">权益受损先行赔付</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="top">正品保障</p>
+                        <p class="below">正规渠道售后有保障</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="top">无忧退换</p>
+                        <p class="below">严格按照消法处理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="top">发票保障</p>
+                        <p class="below">售卖商品可提供发票</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="top">快递包邮</p>
+                        <p class="below">满399快递包邮</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="top">急速发货</p>
+                        <p class="below">24小时内发货</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-relate clearfix">
+                <dl class="cooperation">
+                    <dt>招商合作</dt>
+                    <dd>
+                        <p>助力3C零售商互联网转型</p>
+                        <p>开启新零售时代全新旅程！</p>
+                        <a href="javascript:;">
+                            <span>查看详细</span>>
+                        </a>
+                    </dd>
+                </dl>
+                <dl class="hotline">
+                    <dt>400-688-1999</dt>
+                    <dd>
+                        <p>工作日 9:00 - 18:00</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>
+                        <p>
+                            <a href="javascript:;">账号注册</a>
+                        </p>
+                        <p>
+                            <a href="javascript:;">购物流程</a>
+                        </p>
+                        <p>
+                            <a href="javascript:;">付款方式</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <p>
+                            <a href="javascript:;">先行赔付</a>
+                        </p>
+                        <p>
+                            <a href="javascript:;">退款退货流程</a>
+                        </p>
+                        <p>
+                            <a href="javascript:;">投诉举报</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商城保障</dt>
+                    <dd>
+                        <p>
+                            <a href="javascript:;">正品保障</a>
+                        </p>
+                        <p>
+                            <a href="javascript:;">物流配送</a>
+                        </p>
+                        <p>
+                            <a href="javascript:;">24小时发货</a>
+                        </p>
+                        <p>
+                            <a href="javascript:;">发票保障</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商家服务</dt>
+                    <dd>
+                        <p>
+                            <a href="javascript:;">商家中心</a>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="footer-bottom">
+                <div class="bottom-nav">
+                    <a href="javascript:;">中关村在线</a>
+                    |
+                    <a href="javascript:;">Z商城</a>
+                    |
+                    <a href="javascript:;">团购</a>
+                    |
+                    <a href="javascript:;">产品报价</a>
+                    |
+                    <a href="javascript:;">论坛</a>
+                    |
+                    <a href="javascript:;">问答</a>
+                </div>
+                <div class="bottom-detail">
+                    <a href="javascript:;">关于Z商城</a>
+                    |
+                    <a href="javascript:;">帮助中心</a>
+                    |
+                    <a href="javascript:;">联系我们</a>
+                    |
+                    <a href="javascript:;" class="detail-pic">
+                        <img src="images/gs.jpg" alt="">
+                    </a>
+                </div>
+                <div class="bottom-detail">
+                    <span class="detail-span">
+                        ©2018 中关村在线 版权所有. 
+                        <a href="javascript:;">京ICP证150096号</a>
+                        京ICP备14061128号
+                        <a href="javascript:;">网络文化经营许可证京网文[2016]1631-199</a>
+                    </span>
+                </div>
+                <div class="bottom-focus clearfix">
+                    <div class="wechat">
+                        <img src="images/qr.png" alt="">
+                    </div>
+                    <a href="javascript:;" class="weibo">关注新浪微博</a>
+                </div>
+            </div>
+            <a href="javascript:;" class="advertising">广告</a>
+        </div>
+    </div>
+    <!-- 楼梯 -->
+    <div class="nav-fixed" id="nav-fixed">
+        <a href="javascript:;" class="floor">团购</a>
+        <a href="javascript:;" class="floor">领劵中心</a>
+        <a href="javascript:;" class="floor">同城购</a>
+        <a href="javascript:;" class="floor">Z智选</a>
+        <a href="javascript:;" class="floor">品牌精选</a>
+        <a href="javascript:;" class="floor">电子竞技</a>
+        <a href="javascript:;" class="floor">家电优选</a>
+        <a href="javascript:;" class="floor">数码潮品</a>
+        <a href="javascript:;" class="floor">本周热销</a>
+        <a href="javascript:;" class="back-up">
+            回顶部
+            <span class="trangle"></span>
+        </a>
+    </div>
+    <!-- 吸顶 -->
+    <div class="header" id="search-fixed">
+        <div class="wrapper clearfix">
+            <div class="logo">
+                <a href="javascript:;"></a>
+            </div>
+            <div class="city-location" id="city-loc" name="show-hidden">
+                <span class="city-name">
+                    北京
+                    <em class="icon"></em>
+                </span>
+                <ul class="city-list" id="city-loc-hidden">
+                    <li><a class = "def" href="javascript:;">北京</a></li>
+                    <li><a href="javascript:;">成都</a></li>
+                    <li><a href="javascript:;">青岛</a></li>
+                    <li><a href="javascript:;">西安</a></li>
+                    <li><a href="javascript:;">郑州</a></li>
+                    <li><a href="javascript:;">石家庄</a></li>
+                    <li><a href="javascript:;">平顶山</a></li>
+                    <li><a href="javascript:;">上海</a></li>
+                    <li><a href="javascript:;">德阳</a></li>
+                    <li><a href="javascript:;">邢台</a></li>
+                    <li><a href="javascript:;">承德</a></li>
+                    <li><a href="javascript:;">驻马店</a></li>
+                    <li><a href="javascript:;">安阳</a></li>
+                    <li><a href="javascript:;">新乡</a></li>
+                    <li><a href="javascript:;">宝鸡</a></li>
+                    <li><a href="javascript:;">全国</a></li>
+                </ul>
+            </div>
+            <div class="quick-entry">
+                <a href="javascript:;" class="cart">
+                    购物车
+                    <i class="ico"></i>
+                    <em class="number">0</em>
+                </a>
+                <a href="javascript:;" class="coupon">
+                    我的优惠券
+                    <i class="ico"></i>
+                </a>
+                <a href="javascript:;" class="order">
+                    我的订单
+                    <i class="ico"></i>
+                </a>
+            </div>
+            <div class="search-box">
+                <div class="search">
+                    <input type="text" name="keyword" class="search-text" placeholder="找找您想要的商品">
+                    <input type="submit" value="搜索" class="search-btn">
+                    <div class="search-hot-words">
+                        <a href="javascript:;" title="戴尔限时促销">戴尔限时促销</a>
+                        <a href="javascript:;" title="三星Note8">三星Note8</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧工具栏 -->
+    <div class="side-bar">
+        <div class="tool-bar">
+            <ul class="tool-box">
+                <li class="order" id="order" name="show-hidden">
+                    <div class="tool-icon"></div>
+                    <div class="red-hidden" id="order-hidden">我的订单</div>
+                </li>
+                <li class="footprint" id="footprint" name="show-hidden">
+                    <div class="tool-icon"></div> 
+                    <div class="red-hidden" id="footprint-hidden">我的足迹</div>
+                </li>
+                <li class="cart" id="cart" name="show-hidden">
+                    <div class="tool-icon"></div>
+                    <span class="cart-num">0</span>
+                    <div class="red-hidden" id="cart-hidden">购物车</div>
+                </li>
+                <li class="discount" id="discount" name="show-hidden">
+                    <div class="tool-icon"></div>
+                    <div class="red-hidden" id="discount-hidden">优惠券</div>
+                </li>
+            </ul>
+            <div class="tool-top">
+                <a href="javascript:;" class="back-top"></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(function () {
+            tabsChange();
+            functionIcon();
+            swiperContent();
+            subMenu();
+            subMove();
+            navFixed();
+           
+            // 选项卡(ui-tabs)
+            function tabsChange() {
+                $('#gameTabs').tabs();
+                $('#elecTabs').tabs();
+                $('.top-tab>li').click(function(){
+                    $($('.top-tab>li').removeClass('current')[$(this).index()]).addClass('current');
+                })
+                $('.head-list>li').click(function(){
+                    $($('.head-list>li').removeClass('current')[$(this).index()]).addClass('current');
+                })
+            };
+            // 评论弹窗(layer)
+            function functionIcon() {
+                $('.function-icon').click(function(){
+                    layer.open({
+                        type:2,
+                        shade:0.1,
+                        shadeClose:true,
+                        area: ['800px', '500px'],
+                        content:'remark.html'
+                    });
+                    $('.layui-layer-ico').html('x');
+                    $('.layui-layer-title').empty()
+                    .append('<p class="title">OPPO R11s（4GB RAM/全网通）</p>')
+                    .append('<ul class="change-btn"><li class="tab-btn"><a href="javascript:;">评测</a></li><li class="tab-btn"><a href="javascript:;">视频</a></li><li class="tab-btn"><a href="javascript:;">点评</a></li></ul>')
+                })
+            };
+            // 轮播图(bxsilder)
+            function swiperContent() {
+                var focusSilde = $('#focus-list')
+		        if(focusSilde.find('li').length > 1){
+			        var _focusbxSlider = focusSilde.bxSlider({
+				        mode : 'fade',
+				        auto: true,
+				        prevText: '<span class="bg_mask"></span><span class="arrow"></span>',
+				        nextText: '<span class="bg_mask"></span><span class="arrow"></span>'
+			        });
+			        $('.focus-box .bx-wrapper').on({
+				        'mouseenter': function(){
+				    	    _focusbxSlider.stopAuto();
+				        },
+				        'mouseleave': function(){
+				    	    _focusbxSlider.startAuto();
+				        }
+			        });
+                }
+            };
+            // 二级菜单
+            function subMenu() {
+                $('[name=show-hidden]').hover(function () {
+                    var id = $(this).attr('id');
+                    var subId = id + '-hidden';
+                    $('#' + subId).show();
+                }, function () {
+                    var id = $(this).attr('id');
+                    var subId = id + '-hidden';
+                    $('#' + subId).hide();
+                })
+                // 导航栏
+                $('.category-items .items').hover(function () {
+                    $($('.category-dropdown')[$(this).index()]).show();
+                    $(this).addClass('items-active')
+                }, function () {
+                    $('.category-dropdown').hide();
+                    $(this).removeClass('items-active');
+                })
+                $('.category-dropdown').hover(function () {
+                    $($('.category-items .items')[$(this).index() - 1]).addClass('items-active');
+                    $(this).show()
+                }, function () {
+                    $($('.category-items .items')[$(this).index() - 1]).removeClass('items-active');
+                    $(this).hide()
+                })
+                // 工具栏
+                $('.tool-box>li').hover(function () {
+                    $(this).addClass('tool-active')
+                }, function () {
+                    $(this).removeClass('tool-active');
+                })
+                $('.tool-box .cart').hover(function () {
+                    $('.cart span').addClass('num-active');
+                }, function () {
+                    $('.cart span').removeClass('num-active');
+                })
+                $('.tool-top .back-top').click(function () {
+                    var top = $('body, html').offset().top;
+                    $('body, html').stop().animate({
+                        scrollTop:top
+                    },0)
+                })
+            };
+            // z智选
+            function subMove() {
+                var noopsyche = $('.noopsyche-tab>li');
+                var tabPics = $('.tab-pics>li');
+                noopsyche.mouseenter(function () {
+                    var index = $(this).index();
+                    $(noopsyche.removeClass()[index]).addClass('active');
+                    $(tabPics.hide()[index]).show();
+                });
+            };
+            // 设置悬浮框位置
+            function navFixed() {
+                var fixedTop = $('#section-01').offset().top + 194;
+                $('#search-fixed').css('top', fixedTop + 'xp');
+                $('#nav-fixed').css('top', fixedTop + 'xp');
+                $(window).scroll(function () {
+		            if($(window).scrollTop() >= (fixedTop - 68)){
+                        $('#nav-fixed').fadeIn().css({'position':'fixed','top':'68px','display':'block'});
+                        $('#search-fixed').fadeIn().show();
+                        
+		            }else{
+		            	$('#nav-fixed').css({'position':'absolute','top':fixedTop + 'px','display':'none'});
+                        $('#search-fixed').hide();
+                    };
+                    $('.wrapper .stair').each(function () {
+                        var scrollTop = $('body,html').scrollTop() + 100;
+                        if(scrollTop >= $(this).offset().top){
+                            $('#nav-fixed .floor').eq($(this).index()).addClass('act').siblings().removeClass('act')
+                        }
+                    })
+                    
+                });
+                $('#nav-fixed .floor').click(function(){
+			        var top = $('.wrapper .stair').eq($(this).index()).offset().top - 40;
+			        $('body,html').stop().animate({
+				        scrollTop:top
+			        });
+                });
+                $('#nav-fixed .back-up').click(function(){
+			        var top = $('body,html').offset().top;
+			        $('body,html').stop().animate({
+				        scrollTop:top
+			        });
+                });
+            };
+
+        })
+    </script>
+</body>
+</html>

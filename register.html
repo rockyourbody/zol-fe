@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册_Z商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header clearfix">
+            <div class="return">
+                <a href="javascript:;">立即登录</a>
+                已经有Z商城账号？
+            </div>
+            <div class="logo">
+                <a href="javascript:;">
+                    <img src="images/img-register/logo_130x60.png" alt="">
+                    <p>中关村在线旗下网上商城</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="register-wrap clearfix">
+        <div class="title">30秒快速注册，加入Z商城</div>
+        <form id="formList">
+            <div class="moudle">
+                <div class="moudle-title">
+                    <div class="phone-pic"></div>
+                    <span class="phone-number">用手机注册</span>
+                </div>
+                <div class="moudle-content">
+                    <div class="register-form">
+                        <div class="label">
+                            <em class="star">*</em>
+                            手机号：
+                        </div>
+                        <input type="text" name="phoneNumber" class="text" required minlength="11" maxlength="11">
+                        <div class="tips">请填写手机号码</div>
+                    </div>
+                    <div class="register-form">
+                        <div class="label">
+                            <em class="star">*</em>
+                            验证码：
+                        </div>
+                        <input type="text" name="number" class="text">
+                        <div class="tips">请完成验证</div>
+                    </div>
+                    <div class="register-form clearfix">
+                        <div class="label">
+                            <em class="star">*</em>
+                            验证码：
+                        </div>
+                        <input type="text" name="number" class="text-small" required>
+                        <input type="button" name="button" class="button" value="获取短信验证码">
+                        <div class="tips">请填写手机号码，然后点击[获取验证码]</div>
+                    </div>
+                    <div class="register-form">
+                        <div class="label">
+                            <em class="star">*</em>
+                            密码：
+                        </div>
+                        <input id="password" type="password" name="password" class="text" required minlength="6" maxlength="16">
+                        <div class="tips">6-16位字母和数字的组合，不可用特殊字符</div>
+                    </div>
+                    <div class="register-form">
+                        <div class="label">
+                            <em class="star">*</em>
+                            确认密码：
+                        </div>
+                        <input type="password" name="repeat" class="text" equalTo="#password">
+                        <div class="tips">再次输入密码</div>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" checked>
+                        同意
+                        <a href="javascript:;">《商城用户协议》</a>
+                        <a href="javascript:;">《隐私权说明》</a>
+                    </div>
+                    <input id="register-btn" type="submit" value="注 册" class="register-btn">
+                </div>
+            </div>
+        </form>
+        <div class="fast-login">
+            <p>
+                如果您已经注册，请
+                <a href="javascript:;">直接登录</a>
+                或者用以下方式登录：
+            </p>
+            <div class="login-list clearfix">
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="about">
+                <a href="javascript:;">关于Z商城</a>
+                |
+                <a href="javascript:;">联系我们</a>
+                |
+                <a href="javascript:;">帮助中心</a>
+                |
+            </div>
+            <div class="copyright">
+                ©2018. 中关村在线 版权所有
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        $('#register-btn').click(function(){
+            if($(':checkbox:checked').length == 0){
+                console.log($(':checkbox:checked').length);
+                alert('请先阅读用户协议');
+            }
+        })
+        $('#formList').validate({
+            messages: {
+                phoneNumber: {
+                    required:'请填写手机号码',
+                    minlength:'请填写有效的11位手机号码'
+                },
+                number: {
+                    required:'请填写手机验证码'
+                },
+                password: {
+                    required:'请填写注册密码',
+                    minlength:'6-16位字符，可使用字母、数字或符号的组合'
+                },
+                repeat: {
+                    required:'请填写确认密码',
+                    equalTo:'两次填写的密码不一致'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

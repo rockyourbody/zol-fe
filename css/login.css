@@ -1,0 +1,265 @@
+body{
+    margin: 50px 0;
+}
+.wrapper{
+    width: 990px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 14px;
+    padding-bottom: 20px;
+}
+.header .return{
+    float: right;
+    padding-top: 21px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.header .return a{
+    float: right;
+    height: 16px;
+    padding: 3px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c00;
+}
+.header .return a:hover{
+    color: #fff;
+    background: #cd1f1f;
+}
+.header .logo{
+    float: left;
+}
+.header .logo a{
+    float: left;
+}
+.header .logo a img{
+    float: left;
+    width: 130px;
+    height: 60px;
+}
+.header .logo a p{
+    float: left;
+    margin: 8px 0 0 8px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 44px;
+    border-left: 1px solid #e6e6e6;
+    color: #666;
+    cursor: pointer;
+}
+.content{
+    width: 990px;
+    margin: 0 auto;
+}
+.login-wrap{
+    margin-top: 26px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+}
+.ad{
+    float: left;
+}
+.ad a{
+    display: block;
+}
+.ad a img{
+    width: 520px;
+    height: 350px;
+}
+.login-content{
+    float: right;
+    padding-right: 85px;
+    width: 290px;
+}
+.login-head{
+    position: relative;
+    padding-top: 20px;
+    border-bottom: 2px solid #e6e6e6;
+}
+.login-head p{
+    width: 50%;
+    float: left;
+    height: 35px;
+    margin-bottom: -2px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.login-head p.current{
+    border-bottom: 2px solid #de3030;
+    color: #333;
+}
+.login-select .login-write{
+    padding-top: 25px;
+    position: relative;
+}
+.login-select .login-write .username{
+    margin-bottom: 10px;
+}
+label{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    padding-left: 25px;
+    width: 263px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: #f33;
+    border: 1px solid #f99;
+    background: url(../images/img-register/bg.png) -271px -88px no-repeat;
+    background-color: #fff2f2;
+}
+.login-select .login-write .username label{
+    z-index: 10;
+}
+.login-select .login-write .password{
+    margin-bottom: 7px;
+}
+.login-select .login-write .form-item{
+    display: block;
+    width: 278px;
+    height: 22px;
+    padding: 8px 5px;
+    font-size: 14px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+}
+.login-select .login-write .form-item:focus{
+    outline: 0;
+    border-color: #c00;
+}
+.login-select .login-write .other{
+    padding-bottom: 10px;
+}
+.login-select .login-write .other .other-left{
+    float: left;
+    padding-left: 17px;
+    line-height: 28px;
+    background: url(../images/img-register/bg.png) -279px -111px no-repeat;
+    color: #333;
+}
+.login-select .login-write .other .other-left:hover{
+    color: #c00;
+    text-decoration: underline;
+}
+.login-select .login-write .other .other-right{
+    float: right;
+    line-height: 28px;
+    color: #134ba0;
+}
+.login-select .login-write .other .other-right:hover{
+    color: #c00;
+    text-decoration: underline;
+}
+.login-select .login-write .login-btn{
+    display: block;
+    margin-bottom: 10px;
+    width: 290px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    background: url(../images/img-register/bg.png) 0 0 no-repeat;
+    cursor: pointer;
+    outline: 0;
+}
+.login-select .login-write .login-btn:hover{
+    background-position: 0 -41px;
+}
+.login-select .login-title{
+    width: 290px;
+    text-align: center;
+    margin-top: 15px;
+    color: #666666;
+}
+.login-select .login-title .line{
+    float: left;
+    height: 1px;
+    background: #f0f0f0;
+    width: 100px;
+    margin-top: 7px;
+}
+.login-select .login-title .line:first-child{
+    margin-right: 9px;
+}
+.login-select .login-title .line:last-child{
+    margin-left: 9px;
+}
+.login-select .login-title p{
+    float: left;
+}
+.login-select .login-foot{
+    margin-top: 10px;
+}
+.login-select .login-foot a{
+    float: left;
+    margin-right: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: url(../images/img-register/bg.png) no-repeat;
+}
+.login-select .login-foot a:nth-child(1){
+    background-position: 0 -84px;
+    margin-left: 25px;
+}
+.login-select .login-foot a:nth-child(1):hover{
+    background-position: 0 -122px;
+}
+.login-select .login-foot a:nth-child(2){
+    background-position: -40px -83px;
+}
+.login-select .login-foot a:nth-child(2):hover{
+    background-position: -40px -122px;
+}
+.login-select .login-foot a:nth-child(3){
+    background-position: -79px -83px;
+}
+.login-select .login-foot a:nth-child(3):hover{
+    background-position: -79px -122px;
+}
+.login-select .login-foot a:nth-child(4){
+    background-position: -118px -83px;
+}
+.login-select .login-foot a:nth-child(4):hover{
+    background-position: -118px -122px;
+}
+.login-select .login-foot a:nth-child(5){
+    background-position: -157px -83px;
+}
+.login-select .login-foot a:nth-child(5):hover{
+    background-position: -157px -122px;
+}
+.footer{
+    margin-top: 50px;
+    padding: 12px 0 25px 0;
+    border-top: 1px solid #dcdcdc;
+}
+.footer .wrapper{
+    width: 999px;
+    margin: 0 auto;
+}
+.footer .wrapper .about{
+    float: left;
+    margin-left: -10px;
+    color: #ccc;
+}
+.footer .wrapper .about a{
+    margin: 0 10px;
+    color: #666;
+}
+.footer .wrapper .about a:hover{
+    color: #c00;
+    text-decoration: underline;
+}
+.footer .wrapper .copyright{
+    float: right;
+    color: #666;
+}

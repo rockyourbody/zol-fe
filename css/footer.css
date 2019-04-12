@@ -1,0 +1,213 @@
+.footer{
+    margin-top: 30px;
+    border-top: 1px solid #d9d9d9;
+}
+.footer-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-tab{
+    padding: 30px 0;
+}
+.footer-tab li{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 50px;
+    background: url(../images/service-bg.png) no-repeat;
+}
+.footer-tab li:nth-child(1){
+    background-position: left 0;
+}
+.footer-tab li:nth-child(2){
+    background-position: left -52px;
+}
+.footer-tab li:nth-child(3){
+    background-position: left -104px;
+}
+.footer-tab li:nth-child(4){
+    background-position: left -156px;
+}
+.footer-tab li:nth-child(5){
+    background-position: left -208px;
+}
+.footer-tab li:nth-child(6){
+    background-position: left -260px;
+}
+.footer-tab li a{
+    display: block;
+    height: 50px;
+    padding-left: 60px;
+}
+.footer-tab li .top{
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+    color: #333;
+}
+.footer-tab li .below{
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    color: #666;
+}
+.footer-relate{
+    padding: 20px 0;
+    border-top: 1px solid #ededed;
+}
+.footer-relate .cooperation{
+    float: right;
+    width: 145px;
+    padding-left: 60px;
+    background: url(../images/footer.png) no-repeat;
+    background-position: 0 -215px;
+}
+.footer-relate .cooperation dt{
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.footer-relate .cooperation dd p{
+    font-size: 12px;
+    line-height: 28px;
+}
+.footer-relate .cooperation a{
+    display: block;
+    margin-top: 6px;
+    width: 80px;
+    height: 26px;
+    font-size: 12px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    background: #f33;
+    border-radius: 2px;
+    font-family: simsun;
+}
+.footer-relate .cooperation a span{
+    padding-right: 5px;
+}
+.footer-relate .hotline{
+    float: right;
+    width: 210px;
+    padding-left: 60px;
+    background: url(../images/footer.png) no-repeat;
+    background-position: 0 -90px;
+}
+.footer-relate .hotline dt{
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.footer-relate .hotline dd p{
+    font-size: 12px;
+    line-height: 28px;
+}
+.footer-relate dl{
+    float: left;
+    width: 175px;
+}
+.footer-relate dl dt{
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.footer-relate dl dd p{
+    font-size: 12px;
+    line-height: 28px;
+}
+.footer-relate dl dd p a:hover{
+    text-decoration: underline;
+}
+.footer-nav{
+    padding: 25px 0 30px 0;
+    background: #2d2d2d;
+}
+.footer-bottom{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.bottom-nav{
+    margin-left: -10px;
+    padding-top: 7px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #666;
+}
+.bottom-nav a{
+    margin: 0 10px;
+    color: #fff;
+}
+.bottom-nav a:hover{
+    text-decoration: underline;
+}
+.bottom-detail{
+    margin-left: -10px;
+    padding-top: 20px;
+    color: #666;
+    font-size: 12px;
+    line-height: 24px;
+}
+.bottom-detail a{
+    margin: 0 10px;
+    color: #999;
+}
+.bottom-detail .detail-pic{
+    position: relative;
+}
+.bottom-detail .detail-pic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+.bottom-detail .detail-span{
+    padding-left: 15px;
+    color: #999;
+}
+.bottom-detail .detail-span a{
+    margin: 0 10px;
+    color: #999;
+}
+.bottom-detail a:hover{
+    text-decoration: underline;
+}
+.bottom-focus{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bottom-focus .wechat{
+    float: right;
+    padding-left: 34px;
+    background: url(../images/icon.png) no-repeat;
+    background-position: 0 -22px;
+}
+.bottom-focus .wechat img{
+    width: 100px;
+    height: 100px;
+}
+.bottom-focus .weibo{
+    float: right;
+    height: 20px;
+    padding-left: 34px;
+    margin-right: 40px;
+    background: url(../images/icon.png) no-repeat;
+    color: #fff;
+    background-position: 0 0;
+}
+.bottom-focus .weibo:hover{
+    text-decoration: underline;
+}
+.footer-nav .advertising{
+    color: #fff;
+    background: #666;
+    border-radius: 3px;
+    float: right;
+    margin-right: 50px;
+    padding: 0 8px;
+}

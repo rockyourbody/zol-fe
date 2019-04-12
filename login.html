@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录- Z商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header clearfix">
+            <div class="return">
+                <a href="javascript:;">立即注册</a>
+                还没有Z商城账号？
+            </div>
+            <div class="logo">
+                <a href="javascript:;">
+                    <img src="images/img-register/logo_130x60.png" alt="">
+                    <p>中关村在线旗下网上商城</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <form id="comForm">
+            <div class="login-wrap clearfix">
+                <div class="ad">
+                    <a href="javascript:;">
+                        <img src="images/img-register/ad.jpg" alt="">
+                    </a>
+                </div>
+                <div class="login-content">
+                    <div class="login-head clearfix">
+                        <p class="current">登录Z商城</p>
+                        <p>商家登录</p>
+                    </div>
+                    <div class="login-select">
+                        <div class="login-write">
+                            <div class="username">
+                                <input class="form-item" type="text" placeholder="手机号/邮箱/用户名" name="textCustomer" required>
+                            </div>
+                            <div class="password">
+                                <input class="form-item" type="password" placeholder="密码" name="passwordCustomer" required>
+                            </div>
+                            <div class="other clearfix">
+                                <a href="javascript:;" class="other-left">手机动态码登录</a>
+                                <a href="javascript:;" class="other-right">忘记密码？</a>
+                            </div>
+                            <input class="login-btn" type="submit" value="登 录">
+                        </div>
+                        <div class="login-title clearfix">
+                            <div class="line"></div>
+                            <p>合作账号登录</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="login-foot clearfix">
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                        </div>
+                    </div>
+                    <div class="login-select" style="display:none">
+                        <div class="login-write">
+                            <div class="username">
+                                <input class="form-item" type="text" placeholder="用户名" name="textBusiness" required>
+                            </div>
+                            <div class="password">
+                                <input class="form-item" type="password" placeholder="密码" name="passwordBusiness" required>
+                            </div>
+                            <div class="other clearfix">
+                                <a href="javascript:;" class="other-right">忘记密码？</a>
+                            </div>
+                            <input class="login-btn" type="submit" value="登 录">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="about">
+                <a href="javascript:;">关于Z商城</a>
+                |
+                <a href="javascript:;">联系我们</a>
+                |
+                <a href="javascript:;">帮助中心</a>
+                |
+            </div>
+            <div class="copyright">
+                ©2018. 中关村在线 版权所有
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        
+        $(function(){
+            $('.login-head>p').click(function(){
+                $($('.login-head>p').removeClass('current')[$(this).index()]).addClass('current');
+                $($('.login-select').hide()[$(this).index()]).show();
+            })
+        })
+        $('#comForm').validate({
+            messages:{
+                textCustomer:{
+                    required:'请填写手机号/邮箱/用户名'
+                },
+                passwordCustomer:{
+                    required:'请填写正确的密码'
+                },
+                textBusiness:{
+                    required:'请填写用户名'
+                },
+                passwordBusiness:{
+                    required:'请填写正确的密码'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

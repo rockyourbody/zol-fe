@@ -1,0 +1,41 @@
+/*  
+	Document   :reset.css
+	Created on :2017-5-11
+	Author     :liyue
+	Description:å•†åŸŽæ–°ç‰ˆreset
+*/
+ 
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{ 
+	margin:0;
+	padding:0;
+}
+body{ 
+	font:12px/1.5 "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; 
+	color:#333;
+}
+select,input,button{ 
+	vertical-align:middle;font-size:100%;
+}
+ul,ol{ 
+	list-style:none;
+}
+fieldset,img{ 
+	border:0;
+}
+em{ 
+	font-style:normal;
+}
+.clearfix:after{ 
+	content:"."; 
+	display:block; 
+	visibility:hidden; 
+	clear:both; 
+	height:0; 
+	font-size:0;
+}
+.clearfix{ *zoom:1;}
+
+a{ color:#333; text-decoration:none;}
+a:hover{ color:#f33; text-decoration:underline;}
+
+

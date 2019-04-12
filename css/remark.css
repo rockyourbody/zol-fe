@@ -1,0 +1,25 @@
+body{
+    background: #fff;
+}
+.remark{
+    width: 500px;
+    padding: 0 30px;
+    background: #fff;
+}
+.remark .remark-box{
+    position: relative;
+    width: 732px;
+}
+.remark-content{
+    position: absolute;
+    left: 0;
+}
+.discuss-list .discuss-item{
+    margin: 5px 0 20px 0;
+    width: 730px;
+}
+.discuss-list .discuss-item{
+    text-align: center;
+    width: 732px;
+    height: 2076px;
+}
